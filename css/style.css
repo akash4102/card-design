@@ -1,59 +1,53 @@
 body{
     background-color: hsl(30, 38%, 92%);
     font-family: 'Fraunces', serif;
-    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+
 }
 .main{
     background-color: hsl(0, 0%, 100%);
-    width: 35rem;
-    height: 25rem;
     display: flex;
-    margin: 9.25rem auto 9.25rem auto;
-    justify-content: center;
+    width: 700px;
     border-radius: 0.5rem;
 }
-h3{
-    padding-right: 100%;
-    padding-top: 10px;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 4px;
-    color: gray;
-    font-weight: 200;
-}
-h1{
-    border: 0;
-    margin: 0;
-    font-size: 34px;
-}
-img{
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-}
 .cart{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .product-type{
     font-family: 'Montserrat', sans-serif;
+    letter-spacing: 6px;
+    color: gray;
+    font-weight: 800;
+    padding-top: 1rem;
 }
 .product-name{
-    line-height: 1;
+    font-size: 2.4rem;
     margin: 0;
-    margin-bottom: 10px;
+    padding: 0;
+}
+img{
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
 }
 .product-desc{
-    color: gray;
-    margin: 0;
     border: 0;
-    font-size: 15px;
+    margin: 0;
+    color: gray;
+    font-size: 1.1rem;
 }
 .price{
-    position: relative;
+    padding: 0;
     margin: 0;
-    margin-top: 10px;
-    padding-right: 100%;
 }
 .price-1{
     color: hsl(158, 36%, 37%);
@@ -61,22 +55,18 @@ img{
     padding-right: 1rem;
 }
 .price-2{
+    position: relative;
     color: gray;
 }
 .btn{
     background-color: hsl(158, 36%, 37%);
     color: hsl(0, 0%, 100%);
-    width: 15.5rem;
-    height: 2.8rem;
-    margin-bottom: 1rem;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 2rem;
     border: 0;
     border-radius: 0.5rem;
-    font-size: 14px;
-    margin: 0;
-    margin-bottom: 20px;
-    margin-top: 10px ;
+    font-size: 16px;
 }
-
-@media only screen and (max-width: 375px) {
-    display: flex;
-  }
+/* @media only screen and (max-width: 375px) {
+  } */
